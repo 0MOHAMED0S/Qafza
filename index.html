@@ -1176,6 +1176,110 @@
       --bs-text-opacity: 1;
       color: rgb(192 192 192 / 75%) !important;
     }
+
+    /* --- 9. FLOATING RIGHT ICONS (RESPONSIVE) --- */
+    .floating-right-container {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .icon-float-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff !important;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .icon-float-btn:hover {
+      transform: scale(1.15);
+    }
+
+    /* 50% Discount Button Styling */
+    .btn-discount {
+      background: linear-gradient(135deg, #ff3c3c, #d10000);
+      font-weight: 900;
+      font-size: 1.1rem;
+      animation: pulse-red 2s infinite;
+    }
+
+    /* WhatsApp Button Styling */
+    .btn-whatsapp-icon {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      font-size: 2rem;
+    }
+
+    /* Tooltip Styling */
+    .icon-tooltip {
+      position: absolute;
+      right: 75px;
+      background: rgba(10, 5, 20, 0.9);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(10px);
+      transition: 0.3s ease;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.1);
+      pointer-events: none;
+    }
+
+    .icon-float-btn:hover .icon-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    @keyframes pulse-red {
+      0% { box-shadow: 0 0 0 0 rgba(255, 60, 60, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(255, 60, 60, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 60, 60, 0); }
+    }
+
+    /* --- MOBILE RESPONSIVE FIX --- */
+    @media (max-width: 768px) {
+      .floating-right-container {
+        bottom: 20px;  /* Closer to edge */
+        right: 20px;   /* Closer to edge */
+        gap: 12px;     /* Less space between buttons */
+      }
+
+      .icon-float-btn {
+        width: 40px;   /* Smaller size (was 60px) */
+        height: 40px;
+      }
+
+      .btn-discount {
+        font-size: 0.9rem; /* Smaller text */
+      }
+
+      .btn-whatsapp-icon {
+        font-size: 1.6rem; /* Smaller icon */
+      }
+      
+      /* Hide tooltip on mobile to prevent clutter */
+      .icon-tooltip {
+        display: none; 
+      }
+    }
   </style>
 </head>
 
@@ -1199,7 +1303,19 @@
   <div class="scroll-progress">
     <div class="scroll-progress__bar"></div>
   </div>
+<div class="floating-right-container">
+    
+    <a href="https://wa.me/201110562097?text=مرحباً، أريد الاستفسار عن عرض خصم 50%" target="_blank" class="icon-float-btn btn-discount">
+      50%
+      <span class="icon-tooltip">عرض خصم خاص</span>
+    </a>
 
+    <a href="https://wa.me/201110562097" target="_blank" class="icon-float-btn btn-whatsapp-icon">
+      <i class="fab fa-whatsapp"></i>
+      <span class="icon-tooltip">تواصل معنا</span>
+    </a>
+
+  </div>
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container d-flex justify-content-between align-items-center">
 
