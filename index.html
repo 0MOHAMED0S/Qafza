@@ -1238,7 +1238,7 @@
       transform: translateX(10px);
       transition: 0.3s ease;
       backdrop-filter: blur(5px);
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       pointer-events: none;
     }
 
@@ -1249,35 +1249,49 @@
     }
 
     @keyframes pulse-red {
-      0% { box-shadow: 0 0 0 0 rgba(255, 60, 60, 0.7); }
-      70% { box-shadow: 0 0 0 15px rgba(255, 60, 60, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(255, 60, 60, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(255, 60, 60, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(255, 60, 60, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 60, 60, 0);
+      }
     }
 
     /* --- MOBILE RESPONSIVE FIX --- */
     @media (max-width: 768px) {
       .floating-right-container {
-        bottom: 20px;  /* Closer to edge */
-        right: 20px;   /* Closer to edge */
-        gap: 12px;     /* Less space between buttons */
+        bottom: 20px;
+        /* Closer to edge */
+        right: 20px;
+        /* Closer to edge */
+        gap: 12px;
+        /* Less space between buttons */
       }
 
       .icon-float-btn {
-        width: 45px;   /* Smaller size (was 60px) */
+        width: 45px;
+        /* Smaller size (was 60px) */
         height: 45px;
       }
 
       .btn-discount {
-        font-size: 0.9rem; /* Smaller text */
+        font-size: 0.9rem;
+        /* Smaller text */
       }
 
       .btn-whatsapp-icon {
-        font-size: 1.6rem; /* Smaller icon */
+        font-size: 1.6rem;
+        /* Smaller icon */
       }
-      
+
       /* Hide tooltip on mobile to prevent clutter */
       .icon-tooltip {
-        display: none; 
+        display: none;
       }
     }
   </style>
@@ -1303,9 +1317,10 @@
   <div class="scroll-progress">
     <div class="scroll-progress__bar"></div>
   </div>
-<div class="floating-right-container">
-    
-    <a href="https://wa.me/201110562097?text=مرحباً، أريد الاستفسار عن عرض خصم 50%" target="_blank" class="icon-float-btn btn-discount">
+  <div class="floating-right-container">
+
+    <a href="https://wa.me/201110562097?text=مرحباً، أريد الاستفسار عن عرض خصم 50%" target="_blank"
+      class="icon-float-btn btn-discount">
       50%
       <span class="icon-tooltip">عرض خصم خاص</span>
     </a>
@@ -1629,127 +1644,157 @@
         <p class="text-muted">فريق يجمع بين التصميم، البرمجة، وتجربة المستخدم.</p>
       </div>
 
-<div class="swiper team-swiper">
-  <div class="swiper-wrapper">
+      <div class="swiper team-swiper">
+        <div class="swiper-wrapper">
 
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/masoud.jpg" alt="Masoud">
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/masoud.jpg" alt="Masoud">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Mohamed Masoud</h4>
+              <div class="text-muted small mb-2">Full-Stack Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Vue.js</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/sayed.jpg" alt="Sayed">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Mohamed Sayed</h4>
+              <div class="text-muted small mb-2">Back-End Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">MySQL</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/zain.jpg" alt="Zain">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Zain Al-Abidin</h4>
+              <div class="text-muted small mb-2">Front-End Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">HTML/CSS</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">JavaScript</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">React.js</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/Hussein.jpeg" alt="Hussein">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Hussein Anwer</h4>
+              <div class="text-muted small mb-2">Back-End Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">SQL</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/bog.jpg" alt="Abdelrahman">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Abdelrahman Bogdady</h4>
+              <div class="text-muted small mb-2">UI/UX Designer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Figma</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Adobe XD</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Prototyping</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Wireframing</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/abod.jpeg" alt="Ahmed">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Abdelrahman Ramadan</h4>
+              <div class="text-muted small mb-2">Mobile Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Flutter</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Dart</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Android</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">iOS</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/drdr.jpg" alt="Ahmed">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Ahmed El Dardery</h4>
+              <div class="text-muted small mb-2">Mobile Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Flutter</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Dart</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Android</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">iOS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/afsha.jpg" alt="Abdelrahman">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Mohamed Magdy</h4>
+              <div class="text-muted small mb-2">Mobile Developer</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Flutter</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Dart</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Firebase</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Clean Arch</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="images/team/abdo.jpeg" alt="Ahmed">
+              </div>
+              <h4 class="fw-bold mb-1 text-white">Abdelrahman Mohamed</h4>
+              <div class="text-muted small mb-2">Growth engineering</div>
+              <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Growth Hacking</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Analytics</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">A/B Testing</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">SQL</span>
+                <span class="badge bg-secondary bg-opacity-25 fw-light">Funnel Optimization</span>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <h4 class="fw-bold mb-1 text-white">Mohamed Masoud</h4>
-        <div class="text-muted small mb-2">Full-Stack Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Vue.js</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">MySQL</span>
-        </div>
+
+        <div class="swiper-pagination mt-5"></div>
+        <div class="swiper-button-next d-none d-md-flex"></div>
+        <div class="swiper-button-prev d-none d-md-flex"></div>
       </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/sayed.jpg" alt="Sayed">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Mohamed Sayed</h4>
-        <div class="text-muted small mb-2">Back-End Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">MySQL</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">APIs</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/zain.jpg" alt="Zain">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Zain Al-Abidin</h4>
-        <div class="text-muted small mb-2">Front-End Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">HTML/CSS</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">JavaScript</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">React.js</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Bootstrap</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/Hussein.jpeg" alt="Hussein">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Hussein Anwer</h4>
-        <div class="text-muted small mb-2">Back-End Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">PHP</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Laravel</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">SQL</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Git</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/bog.jpg" alt="Abdelrahman">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Abdelrahman Bogdady</h4>
-        <div class="text-muted small mb-2">UI/UX Designer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Figma</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Adobe XD</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Prototyping</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Wireframing</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/drdr.jpg" alt="Ahmed">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Ahmed El Dardery</h4>
-        <div class="text-muted small mb-2">Mobile Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Flutter</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Dart</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Android</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">iOS</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-slide">
-      <div class="team-card">
-        <div class="team-avatar">
-          <img src="images/team/afsha.jpg" alt="Abdelrahman">
-        </div>
-        <h4 class="fw-bold mb-1 text-white">Mohamed Magdy</h4>
-        <div class="text-muted small mb-2">Mobile Developer</div>
-        <div class="d-flex justify-content-center flex-wrap gap-1 mb-3">
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Flutter</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Dart</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Firebase</span>
-          <span class="badge bg-secondary bg-opacity-25 fw-light">Clean Arch</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="swiper-pagination mt-5"></div>
-  <div class="swiper-button-next d-none d-md-flex"></div>
-  <div class="swiper-button-prev d-none d-md-flex"></div>
-</div>
 
     </div>
   </section>
